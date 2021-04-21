@@ -36,6 +36,8 @@ const changeStyle = function (value) {
 }
 
 document.querySelector('.check').addEventListener('click', function () {
+    const guess = Number(document.querySelector('.guess').value);
+    
     // When there is no input
     if(!guess){ 
         displayMessage('📛 No number!');
